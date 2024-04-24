@@ -51,6 +51,14 @@ gem 'bootsnap', require: false
 # https://github.com/slim-template/slim
 gem 'slim'
 
+# https://github.com/tablecheck/dartsass-sprockets
+gem 'dartsass-sprockets'
+
+# https://github.com/twbs/bootstrap-rubygem/blob/main/README.md
+gem 'bootstrap', '~> 5.3.2'
+
+gem 'jquery-rails'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows]
