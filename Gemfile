@@ -91,3 +91,5 @@ group :test do
 end
 
 gem 'rubocop', '~> 1.63'
+
+gem 'sidekiq', '~> 7.2'
