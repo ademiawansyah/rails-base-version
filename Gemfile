@@ -71,6 +71,9 @@ group :development, :test do
   gem 'rspec-rails'
 
   gem 'rails-controller-testing'
+
+  # https://github.com/ctran/annotate_models
+  gem 'annotate'
 end
 
 group :development do
