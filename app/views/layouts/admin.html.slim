@@ -1,0 +1,31 @@
+doctype html
+html[lang="en"]
+  head
+    title
+      | Portal - Bootstrap 5 Admin Dashboard Template For Developers
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=edge"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    meta[name="description" content="Portal - Bootstrap 5 Admin Dashboard Template For Developers"]
+    meta[name="author" content="Xiaoying Riley at 3rd Wave Media"]
+    link[rel="shortcut icon" href="favicon.ico"]
+    script src="https://kit.fontawesome.com/#{ENV['FONTAWESOME_CODE']}.js" crossorigin="anonymous"
+    = stylesheet_link_tag "portal"
+    = javascript_importmap_tags
+  body.app
+    = render partial: 'shared/admin/navbar'
+    .app-wrapper
+      .app-content.pt-3.p-md-3.p-lg-4
+        .container-xl
+          h1.app-page-title
+            = yield :page_title
+          = yield
+        = render partial: 'shared/admin/footer'
+
+    = javascript_include_tag "bootstrap.min", "data-turbo-track": "reload", "defer": true
+    = javascript_include_tag "popper", "data-turbo-track": "reload", "defer": true
+    = javascript_include_tag "color-modes", "data-turbo-track": "reload", "defer": true
+    = javascript_include_tag "chart.min", "data-turbo-track": "reload", "defer": true
+    = javascript_include_tag "charts-demo", "data-turbo-track": "reload", "defer": true
+    = javascript_include_tag "index-charts", "data-turbo-track": "reload", "defer": true
+    = javascript_include_tag "app", "data-turbo-track": "reload", "defer": true
