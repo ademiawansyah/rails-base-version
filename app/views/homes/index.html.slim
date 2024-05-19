@@ -1,3 +1,294 @@
-.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.pt-3.pb-2.mb-3.border-bottom
-    h1.h2
-        | Dashboard
+= content_for :page_title do 
+  | Page titel
+
+.app-card.alert.alert-dismissible.shadow-sm.mb-4.border-left-decoration[role="alert"]
+  .inner
+    .app-card-body.p-3.p-lg-4
+      h3.mb-3
+        | Welcome, developer!
+      .row.gx-5.gy-3
+        .col-12.col-lg-9
+          div
+            | Portal is a free Bootstrap 5 admin dashboard template. The design is simple, clean and modular so it's a great base for building any modern web app.
+        .col-12.col-lg-3
+          a.btn.app-btn-primary[href="https://themes.3rdwavemedia.com/bootstrap-templates/admin-dashboard/portal-free-bootstrap-admin-dashboard-template-for-developers/"]
+            svg.bi.bi-file-earmark-arrow-down.me-2[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+              path[d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"]
+              path[d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"]
+              path[fill-rule="evenodd" d="M8 6a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 10.293V6.5A.5.5 0 0 1 8 6z"]
+            | Free Download
+      button.btn-close[type="button" data-bs-dismiss="alert" aria-label="Close"]
+.row.g-4.mb-4
+  .col-6.col-lg-3
+    .app-card.app-card-stat.shadow-sm.h-100
+      .app-card-body.p-3.p-lg-4
+        h4.stats-type.mb-1
+          | Total Sales
+        .stats-figure
+          | $12,628
+        .stats-meta.text-success
+          svg.bi.bi-arrow-up[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+            path[fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"]
+          |  20%
+      a.app-card-link-mask[href="#"]
+  .col-6.col-lg-3
+    .app-card.app-card-stat.shadow-sm.h-100
+      .app-card-body.p-3.p-lg-4
+        h4.stats-type.mb-1
+          | Expenses
+        .stats-figure
+          | $2,250
+        .stats-meta.text-success
+          svg.bi.bi-arrow-down[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+            path[fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"]
+          |  5% 
+      a.app-card-link-mask[href="#"]
+  .col-6.col-lg-3
+    .app-card.app-card-stat.shadow-sm.h-100
+      .app-card-body.p-3.p-lg-4
+        h4.stats-type.mb-1
+          | Projects
+        .stats-figure
+          | 23
+        .stats-meta
+          |  Open
+      a.app-card-link-mask[href="#"]
+  .col-6.col-lg-3
+    .app-card.app-card-stat.shadow-sm.h-100
+      .app-card-body.p-3.p-lg-4
+        h4.stats-type.mb-1
+          | Invoices
+        .stats-figure
+          | 6
+        .stats-meta
+          | New
+      a.app-card-link-mask[href="#"]
+.row.g-4.mb-4
+  .col-12.col-lg-6
+    .app-card.app-card-chart.h-100.shadow-sm
+      .app-card-header.p-3
+        .row.justify-content-between.align-items-center
+          .col-auto
+            h4.app-card-title
+              | Line Chart Example
+          .col-auto
+            .card-header-action
+              a[href="charts.html"]
+                | More charts
+      .app-card-body.p-3.p-lg-4
+        .mb-3.d-flex
+          select.form-select.form-select-sm.ms-auto.d-inline-flex.w-auto
+            option[value="1" selected]
+              | This week
+            option[value="2"]
+              | Today
+            option[value="3"]
+              | This Month
+            option[value="3"]
+              | This Year
+        .chart-container
+          canvas#canvas-linechart
+  .col-12.col-lg-6
+    .app-card.app-card-chart.h-100.shadow-sm
+      .app-card-header.p-3
+        .row.justify-content-between.align-items-center
+          .col-auto
+            h4.app-card-title
+              | Bar Chart Example
+          .col-auto
+            .card-header-action
+              a[href="charts.html"]
+                | More charts
+      .app-card-body.p-3.p-lg-4
+        .mb-3.d-flex
+          select.form-select.form-select-sm.ms-auto.d-inline-flex.w-auto
+            option[value="1" selected]
+              | This week
+            option[value="2"]
+              | Today
+            option[value="3"]
+              | This Month
+            option[value="3"]
+              | This Year
+        .chart-container
+          canvas#canvas-barchart
+.row.g-4.mb-4
+  .col-12.col-lg-6
+    .app-card.app-card-progress-list.h-100.shadow-sm
+      .app-card-header.p-3
+        .row.justify-content-between.align-items-center
+          .col-auto
+            h4.app-card-title
+              | Progress
+          .col-auto
+            .card-header-action
+              a[href="#"]
+                | All projects
+      .app-card-body
+        .item.p-3
+          .row.align-items-center
+            .col
+              .title.mb-1
+                | Project lorem ipsum dolor sit amet
+              .progress
+                .progress-bar.bg-success[role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"]
+            .col-auto
+              svg.bi.bi-chevron-right[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+                path[fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"]
+          a.item-link-mask[href="#"]
+        .item.p-3
+          .row.align-items-center
+            .col
+              .title.mb-1
+                | Project duis aliquam et lacus quis ornare
+              .progress
+                .progress-bar.bg-success[role="progressbar" style="width: 34%;" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"]
+            .col-auto
+              svg.bi.bi-chevron-right[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+                path[fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"]
+          a.item-link-mask[href="#"]
+        .item.p-3
+          .row.align-items-center
+            .col
+              .title.mb-1
+                | Project sed tempus felis id lacus pulvinar
+              .progress
+                .progress-bar.bg-success[role="progressbar" style="width: 68%;" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"]
+            .col-auto
+              svg.bi.bi-chevron-right[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+                path[fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"]
+          a.item-link-mask[href="#"]
+        .item.p-3
+          .row.align-items-center
+            .col
+              .title.mb-1
+                | Project sed tempus felis id lacus pulvinar
+              .progress
+                .progress-bar.bg-success[role="progressbar" style="width: 52%;" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"]
+            .col-auto
+              svg.bi.bi-chevron-right[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+                path[fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"]
+          a.item-link-mask[href="#"]
+  .col-12.col-lg-6
+    .app-card.app-card-stats-table.h-100.shadow-sm
+      .app-card-header.p-3
+        .row.justify-content-between.align-items-center
+          .col-auto
+            h4.app-card-title
+              | Stats List
+          .col-auto
+            .card-header-action
+              a[href="#"]
+                | View report
+      .app-card-body.p-3.p-lg-4
+        .table-responsive
+          table.table.table-borderless.mb-0
+            thead
+              tr
+                th.meta
+                  | Source
+                th.meta.stat-cell
+                  | Views
+                th.meta.stat-cell
+                  | Today
+            tbody
+              tr
+                td
+                  a[href="#"]
+                    | google.com
+                td.stat-cell
+                  | 110
+                td.stat-cell
+                  svg.bi.bi-arrow-up.text-success[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+                    path[fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"]
+                  |  30% 
+              tr
+                td
+                  a[href="#"]
+                    | getbootstrap.com
+                td.stat-cell
+                  | 67
+                td.stat-cell
+                  | 23%
+              tr
+                td
+                  a[href="#"]
+                    | w3schools.com
+                td.stat-cell
+                  | 56
+                td.stat-cell
+                  svg.bi.bi-arrow-down.text-danger[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+                    path[fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"]
+                  |  20% 
+              tr
+                td
+                  a[href="#"]
+                    | javascript.com 
+                td.stat-cell
+                  | 24
+                td.stat-cell
+                  | -
+              tr
+                td
+                  a[href="#"]
+                    | github.com 
+                td.stat-cell
+                  | 17
+                td.stat-cell
+                  | 15%
+.row.g-4.mb-4
+            .col-12.col-lg-4
+              .app-card.app-card-basic.d-flex.flex-column.align-items-start.shadow-sm
+                .app-card-header.p-3.border-bottom-0
+                  .row.align-items-center.gx-3
+                    .col-auto
+                      .app-icon-holder
+                        svg.bi.bi-receipt[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+                          path[fill-rule="evenodd" d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z"]
+                          path[fill-rule="evenodd" d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"]
+                    .col-auto
+                      h4.app-card-title
+                        | Invoices
+                .app-card-body.px-4
+                  .intro
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet eros vel diam semper mollis.
+                .app-card-footer.p-4.mt-auto
+                  a.btn.app-btn-secondary[href="#"]
+                    | Create New
+            .col-12.col-lg-4
+              .app-card.app-card-basic.d-flex.flex-column.align-items-start.shadow-sm
+                .app-card-header.p-3.border-bottom-0
+                  .row.align-items-center.gx-3
+                    .col-auto
+                      .app-icon-holder
+                        svg.bi.bi-code-square[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+                          path[fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"]
+                          path[fill-rule="evenodd" d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"]
+                    .col-auto
+                      h4.app-card-title
+                        | Apps
+                .app-card-body.px-4
+                  .intro
+                    | Pellentesque varius, elit vel volutpat sollicitudin, lacus quam efficitur augue
+                .app-card-footer.p-4.mt-auto
+                  a.btn.app-btn-secondary[href="#"]
+                    | Create New
+            .col-12.col-lg-4
+              .app-card.app-card-basic.d-flex.flex-column.align-items-start.shadow-sm
+                .app-card-header.p-3.border-bottom-0
+                  .row.align-items-center.gx-3
+                    .col-auto
+                      .app-icon-holder
+                        svg.bi.bi-tools[width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"]
+                          path[fill-rule="evenodd" d="M0 1l1-1 3.081 2.2a1 1 0 0 1 .419.815v.07a1 1 0 0 0 .293.708L10.5 9.5l.914-.305a1 1 0 0 1 1.023.242l3.356 3.356a1 1 0 0 1 0 1.414l-1.586 1.586a1 1 0 0 1-1.414 0l-3.356-3.356a1 1 0 0 1-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 0 0-.707-.293h-.071a1 1 0 0 1-.814-.419L0 1zm11.354 9.646a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708-.708l-3-3z"]
+                          path[fill-rule="evenodd" d="M15.898 2.223a3.003 3.003 0 0 1-3.679 3.674L5.878 12.15a3 3 0 1 1-2.027-2.027l6.252-6.341A3 3 0 0 1 13.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"]
+                    .col-auto
+                      h4.app-card-title
+                        | Tools
+                .app-card-body.px-4
+                  .intro
+                    | Sed maximus, libero ac pharetra elementum, turpis nisi molestie neque, et tincidunt velit turpis non enim.
+                .app-card-footer.p-4.mt-auto
+                  a.btn.app-btn-secondary[href="#"]
+                    | Create New
+      
